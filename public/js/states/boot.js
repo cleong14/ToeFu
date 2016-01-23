@@ -9,10 +9,11 @@ ToeFu.Boot = function () {
 };
 
 ToeFu.Boot.prototype.preload = function () {
+  
   // autoload each asset by type
-  Object.keys(ToeFu.ASSETS).forEach(function(type) {
-    for ( var asset in ToeFu.ASSETS[type] ){
-      ToeFu.game.Load[ type.toLowerCase() ](
+  Object.keys(ToeFu.ASSETS).forEach(function(type){
+    for( var asset in ToeFu.ASSETS[type] ){
+      ToeFu.game.load[ type.toLowerCase() ](
         ToeFu.ASSETS[type][ asset ].name,
         ToeFu.ASSETS[type][ asset ].path,
         ToeFu.ASSETS[type][ asset ].width,
@@ -21,6 +22,7 @@ ToeFu.Boot.prototype.preload = function () {
       );
     }
   });
+
 };
 
 ToeFu.Boot.prototype.create = function () {

@@ -17,7 +17,7 @@
   SPRITESHEET : {
     PLAYER : {
       name : 'player',
-      path : 'assets.graphics.players_100x96.png',
+      path : 'assets/graphics/players_100x96.png',
       width : 100,
       height : 96,
       frames : 18,
