@@ -1,3 +1,5 @@
+// this is just a way to organize assets
+
 /*
  * each asset is organized by type
  * each asset has struct
