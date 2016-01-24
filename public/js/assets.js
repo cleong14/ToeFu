@@ -13,7 +13,7 @@
  */
 
  ToeFu.ASSETS = {
-  // asset path must be a valid game load.[x] method
+  // asset path much be a valid game.load.[x] method
   SPRITESHEET : {
     PLAYER : {
       name : 'player',
@@ -23,5 +23,13 @@
       frames : 18,
       frames_per_row : 9 // split spritesheet by player/row
     }
+  },
+  IMAGE : {
+    BG : {
+      name : 'bg',
+      path : 'assets/graphics/bg_900x600.jpg',
+      width : 900,
+      height : 600
+    }
   }
- };
+};
