@@ -14,6 +14,7 @@
     RIGHT : 1
   };
 
+  // changes frames [0, 1, 2, 3] to [9, 10, 11, 12]
   function select_sprite_row(player_id){
     return function(frame_id){
       return frame_id + player_id*ToeFu.ASSETS.SPRITESHEET.PLAYER.frames_per_row;
@@ -74,6 +75,32 @@
 
     // update facing
     this.scale.x = FACING_FACTOR[ this.facing ];
+
+  };
+
+  // Input actions
+  ToeFu.Player.prototype.jump = function () {
+
+  };
+
+  ToeFu.Player.prototype.dive = function () {
+
+  };
+
+  ToeFu.Player.prototype.dive_stop = function () {
+
+  };
+
+  ToeFu.Player.prototype.step_left = function () {
+    console.log('stepping left');
+  };
+
+  ToeFu.Player.prototype.step_right = function () {
+
+  };
+
+  // stop stepping left or right
+  ToeFu.Player.prototype.stop = function () {
 
   };
 
